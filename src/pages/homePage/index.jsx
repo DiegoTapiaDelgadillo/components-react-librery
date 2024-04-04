@@ -18,6 +18,9 @@ export default function HomePage() {
       <Link to={"/product-preview-card-component"}>
         <li>Product preview card component</li>
       </Link>
+      <Link to={"/interactive-rating-component"}>
+        <li>Interactive rating component</li>
+      </Link>
     </ol>
   );
 }

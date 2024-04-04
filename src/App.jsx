@@ -12,6 +12,9 @@ export default function App() {
   const ProductPreview = lazy(() =>
     import("./pages/ProductPreviewCardComponentPage/index")
   );
+  const InteractiveRating = lazy(() =>
+    import("./pages/InteractiveRatingComponentPage/index")
+  );
   return (
     <>
       <HashRouter>
@@ -30,6 +33,10 @@ export default function App() {
             <Route
               path="/product-preview-card-component"
               element={<ProductPreview />}
+            />
+            <Route
+              path="/interactive-rating-component"
+              element={<InteractiveRating />}
             />
           </Routes>
         </Suspense>
