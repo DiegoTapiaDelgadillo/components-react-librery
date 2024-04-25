@@ -30,6 +30,12 @@ export default function HomePage() {
       <Link to={"/stats-preview-card-component"}>
         <li>Stats preview card component</li>
       </Link>
+      <Link to={"/profile-card-component"}>
+        <li>Profile card component</li>
+      </Link>
+      <Link to={"/article-preview"}>
+        <li>Article preview component</li>
+      </Link>
     </ol>
   );
 }

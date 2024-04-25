@@ -24,6 +24,8 @@ export default function App() {
   const StatsPreview = lazy(() =>
     import("./pages/StatsPreviewCardComponentPage/index")
   );
+  const Profile = lazy(() => import("./pages/ProfileCardPage/index"));
+  const Article = lazy(() => import("./pages/ArticlePreviewPage/index"));
   return (
     <>
       <HashRouter>
@@ -56,6 +58,8 @@ export default function App() {
               path="/stats-preview-card-component"
               element={<StatsPreview />}
             />
+            <Route path="/profile-card-component" element={<Profile />} />
+            <Route path="/article-preview" element={<Article />} />
           </Routes>
         </Suspense>
       </HashRouter>
