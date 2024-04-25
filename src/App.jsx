@@ -15,6 +15,15 @@ export default function App() {
   const InteractiveRating = lazy(() =>
     import("./pages/InteractiveRatingComponentPage/index")
   );
+  const NftPreview = lazy(() =>
+    import("./pages/NftPreviewCardComponentPage/index")
+  );
+  const OrderSummary = lazy(() =>
+    import("./pages/OrderSummaryComponentPage/index")
+  );
+  const StatsPreview = lazy(() =>
+    import("./pages/StatsPreviewCardComponentPage/index")
+  );
   return (
     <>
       <HashRouter>
@@ -37,6 +46,15 @@ export default function App() {
             <Route
               path="/interactive-rating-component"
               element={<InteractiveRating />}
+            />
+            <Route
+              path="/nft-preview-card-component"
+              element={<NftPreview />}
+            />
+            <Route path="/Order-summary-component" element={<OrderSummary />} />
+            <Route
+              path="/stats-preview-card-component"
+              element={<StatsPreview />}
             />
           </Routes>
         </Suspense>

@@ -21,6 +21,15 @@ export default function HomePage() {
       <Link to={"/interactive-rating-component"}>
         <li>Interactive rating component</li>
       </Link>
+      <Link to={"/nft-preview-card-component"}>
+        <li>nft preview card component</li>
+      </Link>
+      <Link to={"/Order-summary-component"}>
+        <li>Order summary component</li>
+      </Link>
+      <Link to={"/stats-preview-card-component"}>
+        <li>Stats preview card component</li>
+      </Link>
     </ol>
   );
 }
